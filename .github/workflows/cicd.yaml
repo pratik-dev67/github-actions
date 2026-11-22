@@ -11,18 +11,21 @@ jobs:
         run: echo "This is my 1st job"
 
   second:
+    needs: [first] 
     runs-on: ubuntu-latest
     steps:
       - name: Building my 2nd job
         run: echo "This is my 2nd job"
 
   third:
+    needs: [second]
     runs-on: ubuntu-latest
     steps:
       - name: Building my 3rd job
         run: echo "This is my 3rd job"
 
   fourth:
+    needs: [second, third]
     runs-on: ubuntu-latest
     steps:
       - name: Building my 4th job
