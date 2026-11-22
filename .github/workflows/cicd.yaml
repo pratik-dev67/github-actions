@@ -1,0 +1,29 @@
+name: new-job
+
+on:
+  workflow_dispatch:
+
+jobs:
+  first:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Building my 1st job
+        run: echo "This is my 1st job"
+
+  second:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Building my 2nd job
+        run: echo "This is my 2nd job"
+
+  third:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Building my 3rd job
+        run: echo "This is my 3rd job"
+
+  fourth:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Building my 4th job
+        run: echo "This is my 4th job"
