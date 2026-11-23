@@ -1,4 +1,4 @@
-#HEllo Linter
+#Testing Linting
 import random
 
 def number_guessing_game():
