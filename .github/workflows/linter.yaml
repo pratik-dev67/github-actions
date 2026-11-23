@@ -10,3 +10,6 @@ jobs:
    steps:
      - name: Clone the code
        uses: actions/chekout@v7
+
+     - name: Install Linter
+       run: pip install ruff
