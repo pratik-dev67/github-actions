@@ -1,11 +1,14 @@
-#Testing Linting
+
+# Testing Linting
+
 import random
+
 
 def number_guessing_game():
     # Generate a random number between 1 and 100
     secret_number = random.randint(1, 100)
     attempts = 0
-    
+
     print("Welcome to the Number Guessing Game!")
     print("I'm thinking of a number between 1 and 100.")
 
@@ -21,10 +24,15 @@ def number_guessing_game():
             elif guess > secret_number:
                 print("Too high! Try again.")
             else:
-                print(f"Congratulations! You guessed {secret_number} in {attempts} attempts.")
+                print(
+                    f"Congratulations! You guessed {secret_number} "
+                    f"in {attempts} attempts."
+                )
                 break
+
         except ValueError:
             print("Invalid input. Please enter a valid integer.")
+
 
 if __name__ == "__main__":
     number_guessing_game()
