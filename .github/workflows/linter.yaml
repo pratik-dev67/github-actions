@@ -1,0 +1,12 @@
+name: Auto Linter
+
+on: 
+ push: 
+  paths: "*.py"
+
+jobs:
+  first:
+   runs-on: ubuntu-latest
+   steps:
+     - name: Clone the code
+       uses: actions/chekout@v7
